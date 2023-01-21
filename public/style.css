@@ -544,7 +544,6 @@ li {
 }
 
 .contact h1 {
-	color: black;
 	font-size: 25px 0;
 	margin: 20px;
 }
@@ -578,7 +577,6 @@ li {
 	padding: 10px;
 	outline: 0;
 	border: 1px solid #000;
-	color: #000;
 	background: transparent;
 	font-size: 15px;
 }
@@ -589,7 +587,6 @@ li {
 	left: 0;
 	top: 0;
 	padding: 10px;
-	color: #000;
 	font-size: 16px;
 	cursor: text;
 	transition: 0.2s;
@@ -614,7 +611,6 @@ li {
 }
 button.sending {
 	padding: 10px 0;
-	color: #000;
 	outline: none;
 	background: transparent;
 	border: 1px solid #000;
@@ -626,7 +622,6 @@ button.sending {
 	width: 95%;
 	max-width: 700px;
 	padding: 20px;
-	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .contact-table {
@@ -644,7 +639,6 @@ table th {
 .contact-table th {
 	padding: 10px;
 	font-size: 20px;
-	color: black;
 }
 
 table tr:first-child th {
@@ -664,7 +658,6 @@ table tr th:last-child {
 .contact-table td,
 .contact-table td a {
 	font-size: 16px;
-	color: black;
 	line-height: 1.5;
 }
 .contact-table td a i {
