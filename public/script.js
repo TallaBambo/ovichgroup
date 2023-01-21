@@ -24,7 +24,7 @@ for (var i = 1; i < 3; i++) {
 
 ScrollReveal({
     reset: false,
-    distance: '300px',
+    distance: '200px',
     duration: 1500,
     delay: 60
 })
@@ -33,7 +33,7 @@ ScrollReveal().reveal('.mission-image', { origin: 'left', delay: 200, rotate: { 
 ScrollReveal().reveal('.mission-text-container', { origin: 'right' });
 ScrollReveal().reveal('.vision', { origin: 'bottom', delay: 500 });
 ScrollReveal().reveal('.cta_card', { origin: 'left', interval: 100 });
-ScrollReveal().reveal('.heading, .content', { origin: 'bottom', interval: 300 });
+ScrollReveal().reveal('.career-img, .content', { origin: 'bottom', interval: 300 });
+ScrollReveal().reveal('.brand', { origin: 'bottom', interval: 100 });
+// ScrollReveal().reveal('.footer', { origin: 'top' });
 // ScrollReveal().reveal('.mission', { origin: 'bottom' });
-// ScrollReveal().reveal('.footer_wrapper', { origin: 'bottom' });
-// ScrollReveal().reveal('.project-item', { origin: 'bottom', interval: 100 });
