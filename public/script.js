@@ -34,6 +34,6 @@ ScrollReveal().reveal('.mission-text-container', { origin: 'right' });
 ScrollReveal().reveal('.vision', { origin: 'bottom', delay: 500 });
 ScrollReveal().reveal('.cta_card', { origin: 'left', interval: 100 });
 ScrollReveal().reveal('.career-img, .content', { origin: 'bottom', interval: 300 });
-ScrollReveal().reveal('.brand', { origin: 'bottom', interval: 100 });
+ScrollReveal().reveal('.brand', { origin: 'bottom', interval: 100, distance: '100px' });
 // ScrollReveal().reveal('.footer', { origin: 'top' });
 // ScrollReveal().reveal('.mission', { origin: 'bottom' });
