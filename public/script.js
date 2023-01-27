@@ -16,7 +16,7 @@ ScrollReveal({
     delay: 60
 })
 
-ScrollReveal().reveal('.mission-image', { origin: 'left', delay: 200, rotate: { y: 20, x: 20 } });
+ScrollReveal().reveal('.mission-image', { origin: 'left', delay: 200 });
 ScrollReveal().reveal('.mission-text-container', { origin: 'right' });
 ScrollReveal().reveal('.vision', { origin: 'bottom' });
 ScrollReveal().reveal('.cta_card', { origin: 'left', interval: 100 });
