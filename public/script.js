@@ -1,26 +1,39 @@
 const header = document.querySelector('.header')
 document.addEventListener('scroll', () => {
     var scroll_position = window.scrollY;
-    if (scroll_position > 20) {
+    if (scroll_position > 20 && window.innerWidth > 700) {
         header.classList.add('stick')
     } else {
         header.classList.remove('stick')
     }
 
 })
-let slideIndex = 0;
-showSlides();
+const hamburger = document.querySelector('.hamburger');
+const body = document.querySelector('body')
+const _header = document.querySelector('.header')
 
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+hamburger.addEventListener('click', () => {
+    _header.classList.toggle('active');
+    hamburger.classList.toggle('active');
+    body.classList.toggle('over-flow-hidden')
+})
+
+let slides_container = document.querySelector(".slideshow-container");
+if (slides_container) {
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 4000);
     }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 4000);
 }
 
 ScrollReveal({
