@@ -190,8 +190,6 @@ li {
 	width: 0px;
 	margin: 3px auto;
 	text-transform: none;
-	background-color: rgba(0, 0, 0, 0.7);
-	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
 	height: auto;
 	transition: 0.4s ease-in-out;
 	cursor: default;
@@ -232,7 +230,8 @@ li {
 	background-position: center;
 	background-size: cover;
 }
-.hero.home {
+.hero.home,
+.hero.investors {
 	min-height: 90vh;
 }
 
@@ -528,7 +527,6 @@ li {
 
 @keyframes scale {
 	0% {
-		opacity: 0.6;
 		transform: scale(1);
 	}
 	25% {
@@ -846,22 +844,6 @@ table tr th:last-child {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.blog-heading {
-	display: flex;
-	width: 100%;
-	padding-bottom: 20px;
-	border-bottom: 1px solid black;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-
-.blog-heading h3 {
-	font-size: 2.4rem;
-	color: #2b2b2b;
-	font-weight: 600;
-}
-
 .blog-container {
 	display: flex;
 	justify-content: center;
@@ -946,29 +928,6 @@ table tr th:last-child {
 	}
 }
 
-.investors-blogs {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: auto;
-	width: 100%;
-	max-width: 1000px;
-	margin-top: 50px;
-}
-
-.blogs-card {
-	padding: 10px;
-	margin: 15px 0;
-	border-bottom: 1px solid #ccc;
-}
-.blogs-card h1 {
-	font-size: 25px;
-}
-.blogs-card p {
-	font-size: 16px;
-	margin: 10px 0;
-}
 .date {
 	font-size: 14px;
 	font-weight: 600;
@@ -978,6 +937,9 @@ table tr th:last-child {
 	width: 95%;
 	max-width: 1000px;
 	margin: 30px 0 30px 0;
+	font-size: 16px;
+	text-align: justify;
+	line-height: 1.8;
 }
 
 .hero-top {

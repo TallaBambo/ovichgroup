@@ -35,7 +35,11 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     var background = `${slideIndex + 1 + '.webp'}`
-    sliedsContainer.style.backgroundImage = `url('/img/slides/${background}')`
+    if (sliedsContainer.classList.contains('home')) {
+        sliedsContainer.style.backgroundImage = `url('/img/homeSlides/${background}')`
+    } else {
+        sliedsContainer.style.backgroundImage = `url('/img/slides/${background}')`
+    }
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 5000);
 }
