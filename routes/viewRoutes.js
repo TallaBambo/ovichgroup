@@ -6,6 +6,7 @@ router.get('/',
     viewsController.getHomePage)
 
 router.get('/:template',
+    viewsController.checkTemplate,
     viewsController.getPage)
 
 module.exports = router

@@ -336,6 +336,21 @@ li {
 	left: 5px;
 }
 
+.main {
+	height: 90vh;
+	width: 100vw;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #000;
+}
+
+.error__title h2,
+.error__msg {
+	color: white;
+}
+
 .container {
 	min-height: 100vh;
 	width: 100vw;
