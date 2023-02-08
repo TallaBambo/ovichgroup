@@ -343,6 +343,9 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 	background-color: #000;
 }
 
