@@ -304,7 +304,7 @@ li {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background-color: rgb(22, 22, 22);
+	background-color: #000;
 }
 
 .brands-container {
