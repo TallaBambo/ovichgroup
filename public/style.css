@@ -235,6 +235,27 @@ li {
 	min-height: 90vh;
 }
 
+.video-container {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.video-container::after {
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: o;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.video-container video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
 .sloggan {
 	position: absolute;
 	top: 55%;
@@ -262,7 +283,7 @@ li {
 	font-weight: 600;
 	color: white;
 	width: fit-content;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .sloggan h1::after {
@@ -1130,17 +1151,20 @@ table tr th:last-child {
 
 @media (max-width: 500px) {
 	.sloggan p {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.sloggan h1 {
-		font-size: 25px;
+		font-size: 20px;
 	}
 	.brand {
 		margin: 60px 10px;
-		width: 90%;
+		width: 75%;
 	}
 	.brand img {
 		height: auto;
+	}
+	.video-container {
+		display: none;
 	}
 }
 @media (max-width: 400px) {

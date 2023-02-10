@@ -3,8 +3,10 @@ extends base
 block content
     section.hero.home.slidesContainer(style='background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/bg-img/ovichgroup.webp);')
         .sloggan 
-            h1 Who we are
+            h1 Welcome to OvichMedia
             p OvichMedia is a premier independent digital media for the most informative and diversified news stories that group millions of people across the globe, with simplified, but standard writing, free and exclusive information for all.
+        .video-container 
+            video(src="/vid/ovich-newsbg.mp4",  muted, autoplay, loop, poster='/img/bg-img/ovich-poster.png') 
         .slideshow-container
             .mySlides.fade
                 img(src="/img/homeSlides/1.webp", alt="OvichMedia")
