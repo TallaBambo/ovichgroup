@@ -272,12 +272,27 @@ li {
 	align-items: center;
 	z-index: 2;
 }
+.sloggan.sloggan-long {
+	top: 50%;
+	max-width: 1000px;
+	width: 90%;
+	text-align: justify;
+}
+.sloggan.sloggan-long p {
+	font-size: 35px;
+	color: black;
+}
 
 .sloggan p {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 400;
 	color: white;
 	line-height: 1.4;
+}
+.sloggan p a {
+	color: rgb(200, 217, 247);
+	font-size: 16px;
+	text-decoration: underline;
 }
 .sloggan h1 {
 	font-size: 35px;
@@ -544,7 +559,7 @@ li {
 }
 .mySlides::after {
 	content: ' ';
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.5);
 	color: rgba(255, 255, 255, 0.5);
 	font-size: 90px;
 	position: absolute;
@@ -1127,6 +1142,9 @@ table tr th:last-child {
 		width: 95%;
 		margin: 10px 0;
 	}
+	.sloggan.sloggan-long p {
+		font-size: 25px;
+	}
 }
 @media (max-width: 700px) {
 	.hamburger {
@@ -1178,6 +1196,9 @@ table tr th:last-child {
 	}
 	.video-container {
 		display: none;
+	}
+	.sloggan.sloggan-long p {
+		font-size: 18px;
 	}
 }
 @media (max-width: 400px) {

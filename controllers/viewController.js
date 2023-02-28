@@ -8,7 +8,7 @@ exports.getHomePage = catchAsync(async (req, res) => {
 })
 
 exports.checkTemplate = async (req, res, next) => {
-    if (req.params.template == 'career' || req.params.template == 'contact' || req.params.template == 'engagement' || req.params.template == 'investors' || req.params.template == 'mission' || req.params.template == 'newsroom' || req.params.template == 'our-editions' || req.params.template == 'privacy-policy' || req.params.template == 'values' || req.params.template == 'vision') {
+    if (req.params.template == 'career' || req.params.template == 'contact' || req.params.template == 'engagement' || req.params.template == 'investors' || req.params.template == 'mission' || req.params.template == 'newsroom' || req.params.template == 'our-editions' || req.params.template == 'privacy-policy' || req.params.template == 'values' || req.params.template == 'vision' || req.params.template == 'about-ovichmedia') {
         next()
     } else {
         return next(new AppError('The page you requested for doesn\'t exist'), 404)
