@@ -545,60 +545,7 @@ li {
 .mission:nth-of-type(even) .image-container img {
 	border-top-left-radius: 25px;
 }
-.slideshow-container {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	overflow: hidden;
-}
 
-.mySlides {
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-.mySlides::after {
-	content: ' ';
-	background-color: rgba(0, 0, 0, 0.5);
-	color: rgba(255, 255, 255, 0.5);
-	font-size: 90px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-}
-.mySlides img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-/* Fading animation */
-.fade {
-	animation: scale 5s;
-}
-
-@keyframes scale {
-	0% {
-		transform: scale(1);
-	}
-	25% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 1;
-		transform: scale(1.1);
-	}
-	75% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0.6;
-		transform: scale(1);
-	}
-}
 .vision {
 	width: 95%;
 	max-width: 1200px;
