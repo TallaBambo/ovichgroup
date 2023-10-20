@@ -8,6 +8,7 @@ const helmet = require('helmet')
 const mongoseSanitize = require('express-mongo-sanitize')
 const xss = require('xss-clean')
 const cookieParser = require('cookie-parser')
+var httpsRedirect = require('express-https-redirect');
 
 const sendMail = require('./public/mail')
 const AppError = require('./utils/appError')
@@ -17,6 +18,8 @@ const app = express()
 
 app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, 'views'))
+
+app.use('/', httpsRedirect());
 
 var options = {
     etag: true,

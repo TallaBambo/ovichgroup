@@ -114,7 +114,8 @@ li {
 }
 .nav li:hover::after,
 .sub-menu h3:hover::after,
-.sub-menu h2:hover::after {
+.sub-menu h2:hover::after,
+.nav li.current-page::after {
 	width: 100%;
 }
 .edition {

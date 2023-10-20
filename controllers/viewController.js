@@ -15,8 +15,13 @@ exports.checkTemplate = async (req, res, next) => {
     }
 }
 
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 exports.getPage = catchAsync(async (req, res) => {
+    const title = `${capitalizeFirstLetter(req.params.template.split('-').join(' '))}`
     res.status(200).render(req.params.template, {
-        title: req.params.template.toUpperCase().split('-').join(' '),
+        title
     })
 })
