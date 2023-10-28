@@ -15,27 +15,13 @@ a.edition(href="/our-editions") OvichNews
                     <h3><a href="/values">Values</a></h3>
                     <h3><a href="/engagement">Engagement</a></h3>
                     <h3><a href="/privacy-policy">Privacy Policy</a></h3>
-        if (title === 'Our editions')
-            li.current-page
-                <a href="/our-editions">Our editions</a>
-        else 
-            li
-                <a href="/our-editions">Our editions</a>
-        if (title === 'Investors')
-            li.current-page
-                <a href="/investors">Investors</a>
-        else 
-            li
-                <a href="/investors">Investors</a>
-        if (title === 'Career')
-            <li class="current-page"><a href="/career">Careers</a></li>
-        else 
-            <li><a href="/career">Careers</a></li>
-        if (title === 'Newsroom')
-            <li class="current-page"><a href="/newsroom">newsroom</a></li>
-        else 
-            <li><a href="/newsroom">newsroom</a></li>
-        if (title === 'Contact')
-            <li class="current-page"><a href="/contact">Contact</a></li>
-        else
-            <li><a href="/contact">Contact</a></li>
+        li(class=`${title === 'Our editions'? 'current-page' : ' '}`)
+            <a href="/our-editions">Our editions</a>
+        li(class=`${title === 'Investors'? 'current-page' : ' '}`)
+            <a href="/investors">Investors</a>
+        li(class=`${title === 'Career'? 'current-page' : ' '}`)
+            <a href="/career">Careers</a>
+        li(class=`${title === 'Newsroom'? 'current-page' : ' '}`)
+            <a href="/newsroom">newsroom</a>
+        li(class=`${title === 'Contact'? 'current-page' : ' '}`)
+            <a href="/contact">Contact</a>
